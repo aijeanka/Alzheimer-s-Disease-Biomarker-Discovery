@@ -17,15 +17,15 @@ Each team member independently conducted parts of the analysis and then collabor
 ### Step 1: Differential Gene Expression Analysis
 - Each team performed a differential gene expression analysis comparing different stages of AD with normal controls using R.
 - Outputs:
-  - `Name_ComparisonGroupName_BaselinegroupName_TTest.csv`
-  - `Name_ComparisonGroupName_BaselinegroupName_DEGs.csv`
+  - `Aizhan_incipient_control_TTest.csv`
+  - `Aizhan_incipient_control_DEGs.csv`
 
 ### Step 2: Systems Biology Level Analysis
 - Analysis of DEGs using enrichR for pathway and gene ontology enrichment to interpret biological implications.
 - Outputs:
-  - `Name_ComparisonGroupName_BaselinegroupName_EnrichR.xlsx`
-  - `Name_ComparisonGroupName_BaselinegroupName_ShortListedPathways.txt`
-  - `Name_ComparisonGroupName_BaselinegroupName_ShortListedGenes.txt`
+  - `Aizhan_incipient_control_EnrichR.xlsx`
+  - `Aizhan_incipient_control_ShortListedPathways.txt`
+  - `Aizhan_incipient_control_ShortListedGenes.txt`
 
 ### Step 3: Meta-analysis
 - Comparison across all teams to identify commonalities and differences in DEGs at various stages of AD.
@@ -33,20 +33,20 @@ Each team member independently conducted parts of the analysis and then collabor
 
 ### Step 4: Team Presentation
 - Each team prepared a PowerPoint presentation summarizing the findings.
-- Presentation files named `Team#_presentation.pptx`.
+- Presentation files named `Team1_presentation.pptx`.
 
 ### Documentation and Reporting
 - Each student submitted a summary Word document detailing the analysis steps, results, and conclusions.
 - R Markdown files for detailed reproducibility:
-  - `Name_GroupCompAnalysis.Rmd` and `Name_GroupCompAnalysis.PDF/HTML`
-  - `Name_EnrichAnalysis.Rmd` and `Name_EnrichAnalysis.PDF/HTML`
-- `Name_MidtermSummary.docx`: A concise document summarizing the project.
+  - `Aizhan_GroupCompAnalysis.Rmd` and `Aizhan_GroupCompAnalysis.PDF`
+  - `Aizhan_EnrichAnalysis.Rmd` and `Aizhan_EnrichAnalysis.PDF`
+- `Aizhan_MidtermSummary.docx`: A concise document summarizing the project.
 
 ## Repository Structure
 This repository is structured to include all files as described in the outputs section for each step of the project. It serves as a comprehensive archive of all analytical processes and results.
 
 ## How to Use This Repository
-Review the `Name_MidtermSummary.docx` for an overview of the project and analysis. Detailed analysis procedures and results can be accessed through the R Markdown files and their respective outputs.
+Review the `Aizhan_MidtermSummary.docx` for an overview of the project and analysis. Detailed analysis procedures and results can be accessed through the R Markdown files and their respective outputs.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
