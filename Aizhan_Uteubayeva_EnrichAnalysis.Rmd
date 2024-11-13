@@ -1,0 +1,85 @@
+---
+title: "Midterm: Enrichment Analysis"
+author: "Aizhan Uteubayeva (NetID:au198)"
+date: "2023-10-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(enrichR)
+library(openxlsx)
+```
+
+```{r}
+#Read in the T-Test results file
+ttestResults <- read.csv(file = "output/Alzheimer's_Incipient_(Comp).vs._Control_(Base).TTest.csv")
+
+#check to make sure p-value column is imported as numeric 
+#sort by p-value (just in case the results are not sorted by p-value)
+ttestResultsSorted <- dplyr::arrange(ttestResults, Pvalue)
+
+#find rows with p-value < 0.01
+whichSig <- which(ttestResultsSorted$Pvalue <= 0.01) 
+
+#Short list sig results
+ttestResultsSig <- ttestResultsSorted[whichSig, ] #294 rows 
+
+### Export short listed results
+write.table(x = ttestResultsSig, 
+            file = "output/Midterm_Alzheimers_Ttest_Shortlisted.tsv", 
+            quote = F, sep = "\t")
+
+##### First column is a list of features in thsi format : ProbeID|GeneName. 
+#### Use string split strsplit() function to extract gene names
+funcSplit <- function(featureX) {
+  f1 <- unlist(strsplit(x = featureX, split = "|", fixed = TRUE))
+  f2 <- f1[2]
+  return(f2)
+}
+
+# Use apply() function to run the split on every row, its faster version of a loop
+geneNames1 <- apply(X = as.matrix(ttestResultsSig$Feature), 
+                    MARGIN = 1, FUN = funcSplit)
+
+head(geneNames1)
+
+unique_genes <- unique(geneNames1)
+
+#print length of short listed gene names
+length(unique_genes)
+
+### Export list of gene names
+write.table(x = unique_genes, 
+            file = "output/Unique_Midterm_Alzheimers_SigDiffExpressedGenes.tsv", 
+            quote = F, sep = "\t")
+```
+## Loading Databases for EnrichrR package
+
+```{r}
+#checking if EnrichR website and packing are working
+#dbs <- enrichR::listEnrichrDbs()  #total number of databases available = 200+ 
+
+#testing if EnrichR package is working
+testOutput <- enrichR::enrichr(genes = c("Runx1", "Gfi1", "Gfi1b", "Spi1", "Gata1", "Kdr"), databases = "KEGG_2021_Human")
+head(testOutput[[1]])
+
+#List of databases for which enrichment analysis will be run
+dblist1 <- read.csv(file = "input/2023-EnrichR-Databases.txt", 
+                    header = F, stringsAsFactors = F)
+
+head(dblist1)
+```
+## Calling function to run Enrichment
+
+```{r}
+# set output file name
+outputFileName1 <- paste("output/Aizhan_Uteubayeva", "_EnrichR_Alzheimers.xlsx", sep="")
+
+#Load R script into the environment
+source(file = "input/functionEnrichment.R") 
+
+#call function to run Enrichment
+functionEnrichment(dblist1, unique_genes, outputFileName1)
+```
+```
