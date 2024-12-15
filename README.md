@@ -1,58 +1,71 @@
-# Alzheimer’s Disease Study - Midterm Project
+Here’s a professional and concise rewrite of your repository description to appeal to potential employers. This version focuses on showcasing your skills, methodologies, and outcomes while removing course-specific details that might appear overly academic.
 
-## Project Overview
-This repository contains the results and documentation for a bioinformatics project focused on the discovery of new molecular biomarkers and potential drug targets for Alzheimer's disease (AD). This work was conducted by interdisciplinary teams as part of HIDS-7003_2023 Midterm Project.
+---
 
-## Introduction
-As part of an interdisciplinary team embedded into a neuro-biology lab, this project involves analyzing gene expression data from human brain tissue samples at various stages of Alzheimer's disease, ranging from normal controls to severely affected subjects.
+# **Alzheimer’s Disease Biomarker Discovery**
 
-## Teams and Collaboration
-- **Team 1**: Joan, Gazie, Aditya, Aizhan
-- **Team 2**: Han-shen, Prachi, Shania, Subha
-- **Team 3**: Yukhta, Youngmin, Frankie, Sydney
+## **Project Overview**
+This repository contains the results and documentation of a bioinformatics project aimed at identifying molecular biomarkers and potential drug targets for Alzheimer’s Disease (AD). The study involved differential gene expression analysis and pathway enrichment to uncover biological insights from human brain tissue data.
 
-Each team member independently conducted parts of the analysis and then collaborated to verify and validate results.
+## **Project Objectives**
+- Discover potential biomarkers associated with different stages of Alzheimer's Disease.
+- Identify pathways and gene networks disrupted in AD.
+- Conduct a meta-analysis to find common patterns across datasets.
 
-## Project Steps and Outputs
-### Step 1: Differential Gene Expression Analysis
-- Each team performed a differential gene expression analysis comparing different stages of AD with normal controls using R.
-- Outputs:
-  - `Aizhan_incipient_control_TTest.csv`
-  - `Aizhan_incipient_control_DEGs.csv`
+## **Methodology**
+### **1. Differential Gene Expression Analysis**
+Performed differential gene expression analysis using R to compare various stages of AD against normal controls.
 
-### Step 2: Systems Biology Level Analysis
-- Analysis of DEGs using enrichR for pathway and gene ontology enrichment to interpret biological implications.
-- Outputs:
-  - `Aizhan_incipient_control_EnrichR.xlsx`
-  - `Aizhan_incipient_control_ShortListedPathways.txt`
-  - `Aizhan_incipient_control_ShortListedGenes.txt`
+**Key Outputs:**
+- Differentially expressed gene (DEG) lists (e.g., `Aizhan_incipient_control_DEGs.csv`).
 
-### Step 3: Meta-analysis
-- Comparison across all teams to identify commonalities and differences in DEGs at various stages of AD.
-- Utilization of Venn diagrams to find overlaps between DEG lists from different stages.
+### **2. Pathway and Gene Ontology Enrichment**
+Utilized EnrichR for pathway and gene ontology enrichment to interpret the biological implications of the DEGs.
 
-### Step 4: Team Presentation
-- Each team prepared a PowerPoint presentation summarizing the findings.
-- Presentation files named `Team1_presentation.pptx`.
+**Key Outputs:**
+- Enrichment results in Excel (`Aizhan_incipient_control_EnrichR.xlsx`).
+- Shortlisted pathways and genes (`ShortListedPathways.txt`, `ShortListedGenes.txt`).
 
-### Documentation and Reporting
-- Each student submitted a summary Word document detailing the analysis steps, results, and conclusions.
-- R Markdown files for detailed reproducibility:
-  - `Aizhan_GroupCompAnalysis.Rmd` and `Aizhan_GroupCompAnalysis.PDF`
-  - `Aizhan_EnrichAnalysis.Rmd` and `Aizhan_EnrichAnalysis.PDF`
-- `Aizhan_MidtermSummary.docx`: A concise document summarizing the project.
+### **3. Meta-Analysis Across Teams**
+Compared DEGs across multiple analyses to identify common biomarkers and pathways. Visualized overlaps using Venn diagrams.
 
-## Repository Structure
-This repository is structured to include all files as described in the outputs section for each step of the project. It serves as a comprehensive archive of all analytical processes and results.
+### **4. Documentation and Reproducibility**
+Provided detailed R Markdown files for reproducibility of the analyses.
 
-## How to Use This Repository
-Review the `Aizhan_MidtermSummary.docx` for an overview of the project and analysis. Detailed analysis procedures and results can be accessed through the R Markdown files and their respective outputs.
+**Reproducible Analysis Files:**
+- `Aizhan_GroupCompAnalysis.Rmd` and corresponding PDF.
+- `Aizhan_EnrichAnalysis.Rmd` and corresponding PDF.
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+### **5. Summary Report**
+A comprehensive summary document detailing the analysis, findings, and conclusions (`Aizhan_MidtermSummary.docx`).
 
-## Author
-- Aizhan Uteubayeva (and team members as per the respective teams listed)
+## **Repository Structure**
+```
+├── Differential_Expression/
+│   └── DEG_Results.csv
+├── Enrichment_Analysis/
+│   └── EnrichR_Results.xlsx
+├── Meta_Analysis/
+│   └── Venn_Diagrams/
+├── Documentation/
+│   ├── Summary_Report.docx
+│   └── RMarkdown_Files/
+└── LICENSE
+```
 
-## Additional Notes
-This project is an open-ended exploration into genomic data. Members are encouraged to pursue further inquiries beyond the course scope to potentially uncover new biological insights.
+## **Skills Demonstrated**
+- **Bioinformatics Analysis**: Differential gene expression, pathway enrichment, and meta-analysis.
+- **Data Visualization**: Generation of plots and Venn diagrams for comparative insights.
+- **Reproducible Research**: Use of R Markdown for documenting analytical workflows.
+- **Collaboration**: Effective teamwork and integration of results.
+
+## **Author**
+**Aizhan Uteubayeva**  
+*Collaborators: Names of contributors upon request.*
+
+## **License**
+This project is licensed under the MIT License.
+
+---
+
+This version highlights your technical skills, maintains clarity, and removes unnecessary coursework details, making it suitable for a professional audience. Let me know if you’d like to make further adjustments!
