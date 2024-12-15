@@ -1,7 +1,3 @@
-Here’s a professional and concise rewrite of your repository description to appeal to potential employers. This version focuses on showcasing your skills, methodologies, and outcomes while removing course-specific details that might appear overly academic.
-
----
-
 # **Alzheimer’s Disease Biomarker Discovery**
 
 ## **Project Overview**
@@ -65,7 +61,3 @@ A comprehensive summary document detailing the analysis, findings, and conclusio
 
 ## **License**
 This project is licensed under the MIT License.
-
----
-
-This version highlights your technical skills, maintains clarity, and removes unnecessary coursework details, making it suitable for a professional audience. Let me know if you’d like to make further adjustments!
