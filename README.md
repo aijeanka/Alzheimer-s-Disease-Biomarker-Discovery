@@ -33,7 +33,7 @@ Provided detailed R Markdown files for reproducibility of the analyses.
 - `Aizhan_EnrichAnalysis.Rmd` and corresponding PDF.
 
 ### **5. Summary Report**
-A comprehensive summary document detailing the analysis, findings, and conclusions (`Aizhan_MidtermSummary.docx`).
+A comprehensive summary document detailing the analysis, findings, and conclusions (`Alzheimers_biomarker_summary.docx`).
 
 ## **Repository Structure**
 ```
